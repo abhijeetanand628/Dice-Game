@@ -84,6 +84,7 @@ btnHold.addEventListener('click', function() {
         diceEl.classList.add('hidden');
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
+        document.getElementById(`current--${activePlayer}`).textContent = 'Winner!';
     } else {
 
     // 4.Switch to next player
